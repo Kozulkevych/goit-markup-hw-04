@@ -268,17 +268,15 @@ body {
   gap: 30px;
 }
 .features-item {
-  flex-basis: calc((100% - 3 * 30px) / 4);
+  column-gap: calc((100% - 3 * 30px) / 4);
 }
 .features-icon {
   display: flex;
-  width: 270px;
   height: 120px;
   background: var(--secondary-light-bg-color);
   border-radius: 4px;
-  border: none;
-
-  padding: 25px 100px;
+  align-items: center;
+ 
   margin-bottom: 30px;
 }
 .feature-title {
@@ -390,6 +388,7 @@ body {
 
   background-color: var(--primary-light-bg-color);
   border: 1px solid var(--primary-icon-color);
+  outline: transparent;
   border-radius: 4px;
   fill: var(--primary-icon-color);
 }
@@ -424,6 +423,7 @@ body {
 
   border: none;
   border-radius: 4px;
+  outline: transparent;
   min-width: 73px;
   padding: 6px 22px;
 }
@@ -450,7 +450,10 @@ body {
 .project-link:hover,
 .project-link:focus {
   box-shadow: var(--secondary-box-shadow-color);
+  outline: transparent;
 }
+
+
 .portfolio-link {
   display: flex;
 }
